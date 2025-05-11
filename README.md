@@ -2,6 +2,7 @@
 
 Converts PDFs (text + images) into a TXT via OCR (Tesseract).
 
+* **OCR language**: to add another language (e.g. English), install its Tesseract package in the Dockerfile (e.g. `tesseract-ocr-eng`) and set `lang="eng"` in `extract_pdf.py`. Default is Portuguese.
 ---
 
 ## Prerequisites
@@ -98,9 +99,8 @@ pdf-ocr-extractor/
 
 ---
 
-## Customization & Troubleshooting
+## Troubleshooting
 
-* **OCR language**: to add another language (e.g. English), install its Tesseract package in the Dockerfile (e.g. `tesseract-ocr-eng`) and set `lang="eng"` in `extract_pdf.py`.
 * **Volume errors on Windows**: if you get permission or invalid-volume errors, try using an absolute host path or `${PWD}` in PowerShell.
 * **Inspect container contents**: open an interactive shell inside the image:
 
