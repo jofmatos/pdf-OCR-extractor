@@ -55,7 +55,7 @@ Converts PDFs (text + images) into a TXT via OCR (Tesseract).
      docker run --rm `
        -v "$($pwd.Path):/app" `
        pdf-ocr-extractor `
-       seu_arquivo.pdf
+       your_file.pdf
      ```
 
    The script will process `your_file.pdf` and produce `your_file_ocr.txt` in the current directory.
